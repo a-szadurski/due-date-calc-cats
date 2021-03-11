@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang=pl>
+<head>
+    <meta charset="UTF-8">
+    <title> Kalendarz ciążowy kota </title>
+
+</head>
+<body>
+<script src="dueDateCalculator-with%20mistakes.js"></script>
+<div>
+
+
+    <h2 align="Center">
+        Oblicz przybliżoną datę porodu:
+        <br> <br></h2>
+
+    <p align="Center"><b> Podaj datę krycia: </b>
+        <input type="date" id="dateInput">
+        <br> <br>
+
+        <button id="calcBtn">
+            Oblicz:
+        </button>
+    </p>
+
+    <h2 id="dueDate" align="center" data-date=""></h2>
+</div>
+
+<div id="detailsBtn" align="center">
+    <button id="detailsButton">Szczegóły</button>
+</div>
+<br><br>
+<div id="detailsCont" align="center">
+    <table style="width:100%" border='1'>
+        <tr>
+<!--            [0]-->
+            <td class="detDate">date01</td>
+            <td>
+                <ul>
+                    <li>To pierwszy dzień krycia.Najlepiej odseparować kocura i kotkę 48 godzin po pierwszym
+                        kryciu. Kolejne krycia pojawiające się w ograniczonym czasie wzmacniają uwalnianie hormonu
+                        luteinizującego
+                        z przysadki mózgowej. Hormon ten jest konieczny dla ostatecznego dojrzewania komórek jajowych.
+                        Pojedyncze
+                        krycie może okazać się niewystarczające, ale nie wolno popełnić błędu i pozwolić na zbyt długie
+                        (dłużej niż 3 dni)
+                        krycia - będzie wtedy bardzo trudno określić termin porodu.
+                    <li>Plemniki wędrują w górę szyjki macicy.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [1]-->
+            <td class="detDate">date02</td>
+            <td>
+                <ul>
+                    <li>Owulacja (uwolnienie dojrzałych komórek jajowych z pęcherzyków jajnika). Owulacja jest
+                        indukowana przez akt kopulacji. Pojawia się około 24 do 36 godzin po kryciu. Uwolnione komórki
+                        jajowe zaczynają przesuwać się w jajowodach w kierunku macicy.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [2]-->
+            <td class="detDate">date02 - date03</td>
+            <td>
+                <ul>
+                    <li>Plemniki docierają do komórek jajowych znajdujących się na tym etapie w jajowodach.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [3]-->
+            <td class="detDate">date03 - date04</td>
+            <td>
+                <ul>
+                    <li>Ciągle jeszcze w jajowodach, następuje zapłodnienie, i zapłodnione komórki jajowe nadal
+                        transportowane są przez jajowody w kierunku macicy.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [4]-->
+            <td class="detDate">date04 - date05</td>
+            <td>
+                <ul>
+                    <li>Zapłodnione komórki jajowe docierają w dół jajowodów do rogów macicy.
+                    <li>Wędrówka trwa nadal, i embriony w miarę równomiernie rozlokowują się w macicy.
+                    <li>Podczas tej wędrówki komórki jajowe będą ulegać podziałom, i osiągną formy blastocyst. To
+                        stadium, w którym zarodki gotowe są do zagnieżdżenia w ścianie macicy.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [5]-->
+            <td class="detDate">date06 - date07</td>
+            <td>
+                <ul>
+                    <li>Blastocysty zagnieżdżają się w ścianie macicy.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [6]-->
+            <td class="detDate">date06-date08</td>
+            <td>
+                <ul>
+                    <li>Blastocysty ulegają dalszym podziałom, a ich komórki specjalizacjom, aż osiągną kolejny stopień,
+                        w których nazywamy je już zarodkami (embrionami).
+                    <li>W trakcie następnych dwóch tygodni wykształcone zostaną w kocim zarodku najważniejsze organy.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [7]-->
+            <td class="detDate">date09 - date10</td>
+            <td>
+                <ul>
+                    <li>Sutki kotki lekko się powiększają i nabierają wyraźnie ciemnoróżowego, malinowego koloru.
+                    <li>Futro na brzuchu kotki i wokół sutków zacznie się przerzedzać.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [8]-->
+            <td class="detDate">date11 - date12</td>
+            <td>
+                <ul>
+                    <li>Mogą pojawić się poranne mdłości, spowodowane zmianami hormonalnymi, lub naciągnięciem i
+                        nabrzmieniem macicy. Kotka może stać się apatyczna. Może nie bardzo wiedzieć, co się z nią
+                        dzieje, i wymiotować od czasu do czasu.
+                    <li>Pomocne może okazać się karmienie kotki kilka razy dziennie, często a małymi porcjami.
+                    <li>Być może Twój weterynarz przepisze kotce jakiś środek, aby rozluźnić napiętą macicę.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [9]-->
+            <td class="detDate">date08 - date13</td>
+            <td>
+                <ul>
+                    <li>Doświadczona osoba (hodowca lub weterynarz), może przez ostrożne obmacanie brzucha określić, czy
+                        kotka jest w ciąży.
+                    <li>Najlepiej zrobić to właśnie teraz - zarodki są rozmiaru orzecha i łatwe do policzenia.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [10]-->
+            <td class="detDate">date14</td>
+            <td>
+                <ul>
+                    <li>Można zacząć zwiększać kotce racje żywnościowe. Dobrze jest zacząć podawać kotce karmę
+                        przeznaczoną dla kociąt. Nie jest jednak rozważne w tym momencie próbować nowych marek.
+                    <li>Nie przekarmiaj kotki, unikaj utuczenia ciężarnej kotki! Otyłość to największy wróg sprawnego
+                        porodu.
+                    <li>Kocie płody mają już długość 25-30 mm, i są już w pełni ukształtowanymi malutkimi kotkami.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [11]-->
+            <td class="detDate">date15</td>
+            <td>
+                <ul>
+                    <li>Koci brzuch zaczyna się powiększać :)
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [12]-->
+            <td class="detDate">date16</td>
+            <td>
+                <ul>
+                    <li>Można już z łatwością wyczuć kocięta, ale policzenie ich może być raczej trudne.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [13]-->
+            <td class="detDate">date17 - date18</td>
+            <td>
+                <ul>
+                    <li>Kotka zaczyna spędzać znacznie więcej czasu na wylizywanie futra, szczególnie na brzuchu.
+                    <li>Sutki stają się wyraźnie obrzmiałe.
+                    <li>Kotka może stać się trochę niespokojna, zaczyna szukać sobie odpowiedniego miejsca do porodu
+                        (gniazdowanie).
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [14]-->
+            <td class="detDate">date19</td>
+            <td>
+                <ul>
+                    <li>W tym okresie kotka może stracić zainteresowanie jedzeniem. Brzuch jest niekiedy mocno napięty,
+                        jeśli znajduje się w nim dużo kociąt :)
+                    <li>Najlepiej karmić kotkę w tym okresie małymi porcjami, ale często w ciągu dnia.
+                    <li>Wyraźnie już widać i czuć pod palcami poruszające się w brzuchu kocięta.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [15]-->
+            <td class="detDate">date19 - date20</td>
+            <td>
+                <ul>
+                    <li>Jeśli kotka ma trudności z pielęgnacją futra, można jej pomóc. Sutki i srom można delikatnie
+                        przemyć ciepła wodą, można też przystrzyc włosy otaczające sutki, kociętom będzie łatwiej się do
+                        nich dostać. Nie należy całkowicie golić brzucha, niekiedy kocięta rodzą się z ostrymi pazurami
+                        mogą w trakcie jedzenia dotkliwie poranić kotkę wokół sutków.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [16]-->
+            <td class="detDate">date20 - date21</td>
+            <td>
+                <ul>
+                    <li>Z sutków po naciśnięciu wydobywa się mleko.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [17]-->
+            <td class="detDate">date22</td>
+            <td>
+                <ul>
+                    <li>Można zacząć mierzyć kotce temperaturę każdego ranka.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [18]-->
+            <td class="detDate">date23</td>
+            <td>
+                <ul>
+                    <li>12 do 24 godzin przed porodem, temperatura mierzona w odbycie spada o jeden stopień, z 38,5 do
+                        37,5 stopni Celsjusza.
+                    <li>Z pochwy może wydobywać się w niewielkich ilościach śluz zabarwiony krwią.
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <!--            [19]-->
+            <td class="detDate">dueDate</td>
+            <td>
+                <ul>
+                    <li>Spodziewany dzień porodu, oczywiście jest to termin przybliżony. Tak naprawdę poród może zdarzyć
+                        się pomiędzy 60. a 70. dniem ciąży. Kocięta urodzone przed 60 dniem ciąży prawie na pewno będą
+                        zbyt młode, aby przeżyć poza organizmem matki.
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
